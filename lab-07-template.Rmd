@@ -67,7 +67,9 @@ y (with little hat) = 3.88 + 0.0666x
 ### Exercise 4
 
 ```{r viz-score_bty_fit}
-# add your code here
+ggplot(evals, aes(x = score, y = bty_avg)) +
+    geom_jitter() +
+    geom_smooth(method = "lm", se = FALSE)
 ```
 
 ### Exercise 5
