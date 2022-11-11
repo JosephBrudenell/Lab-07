@@ -38,20 +38,16 @@ The graph is clearly left-skewed! This means that students are giving higher tha
 ### Exercise 2
 
 ```{r viz-score-bty, eval = FALSE}
-# add the code for each plot and assign them to the names as outlined below
-# remove eval = FALSE from the code chunk options
-# knit the document, and you'll see them appear next to each other
-# this uses the patchwork package loaded above
-# learn more about patchwork at https://patchwork.data-imaginist.com/
-# it might be useful for your presentations!
-plot_geom_point  <- ggplot(___)
+plot_geom_point  <- ggplot(evals) +
+  geom_point(aes(x = score, y = bty_avg))
 
-plot_geom_jitter <- ggplot(___)
+plot_geom_jitter <- ggplot(evals) +
+  geom_jitter(aes(x = score, y = bty_avg))
 
 plot_geom_point + plot_geom_jitter
 ```
 
-*Add your narrative here.*
+Jitter adds some random variation to the location of each point. In the first plot some points are overlapping.
 
 ### Exercise 3
 
