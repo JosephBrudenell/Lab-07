@@ -33,7 +33,7 @@ evals %>%
   geom_histogram(aes(x = score))
 ```
 
-*Add your narrative here.*
+The graph is clearly left-skewed! This means that students are giving higher than average ratings most of the time. You would expect to see a bell curve over the average. This tells us students are rating courses based on external factors.
 
 ### Exercise 2
 
